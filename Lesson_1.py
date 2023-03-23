@@ -1,7 +1,6 @@
 #ДЗ 1
-
-
 #2
+# Первый способ решения
 sec = input('Введите количество секунд: ')
 
 if not sec.isdigit():
@@ -14,8 +13,33 @@ else:
     print('Количество минут: ', min)
     print('Количество часов: ', hour)
 
+# Второй способ решения
+while True:
+    sec = input("Введите число в секундах: ")
+    if sec.isdigit():
+        min = int(sec) / 60
+        hour = int(min) / 60
+        print(sec)
+        print(min)
+        print(hour)
+        break
+    else:
+        print("Попробуй еще раз")
+        continue
+
 #3
-n = input('Введите число от 1 до 9: ')
-nn = n + n
-nnn = n + n + n
-print(int(n) + int(nn) + int(nnn))
+while True:
+    n = input('Введите число от 1 до 9: ')
+    if n.isdigit():
+        n = int(n)
+        if 1 <= n <= 9:
+            nn = n + n
+            nnn = n + n + n
+            print(int(n) + int(nn) + int(nnn))
+            break
+        else:
+            print("Ты ввел число не от 1 до 9")
+            continue
+    else:
+        print("Введи число от 1 до 9, а не текст")
+        continue
