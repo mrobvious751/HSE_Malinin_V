@@ -14,13 +14,3 @@ new_uchastnik = {"name": name, "status": status, "inn": inn}
 uchastnik_spora.append(new_uchastnik)
 
 print(uchastnik_spora)
-
-
-    if sec == sec.isdigit():
-        min = int(sec) / 60
-        hour = int(min) / 60
-        print(sec)
-        print(min)
-        print(hour)
-    else:
-        print("Попробуй еще раз")
