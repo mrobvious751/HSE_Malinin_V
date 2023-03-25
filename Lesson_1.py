@@ -33,8 +33,9 @@ while True:
     if n.isdigit():
         n = int(n)
         if 1 <= n <= 9:
-            nn = n + n
-            nnn = n + n + n
+            n = str(n)
+            nn = str(n) + str(n)
+            nnn = str(n) + str(n) + str(n)
             print(int(n) + int(nn) + int(nnn))
             break
         else:
