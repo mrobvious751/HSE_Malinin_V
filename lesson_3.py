@@ -27,6 +27,7 @@ from data import repondents, courts
          'court_website': 'http://faspo.arbitr.ru/'},
 """
 
+
 def run(string):
     # Арбитражного суда города Санкт-Петербурга
     words = string.split()[2::]
