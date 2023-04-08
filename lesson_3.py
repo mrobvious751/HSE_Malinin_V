@@ -42,7 +42,6 @@ for full_info_request in repondents:
         full_info_court = courts.get(code_of_court)
         # ==============
 
-
         court = run(full_info_court.get('court_name'))
         address = full_info_court.get('court_address')
         name = full_info_request.get('full_name')
